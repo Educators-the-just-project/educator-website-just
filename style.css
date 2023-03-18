@@ -665,7 +665,7 @@ hr.new1 {
 .about-section-second{
  display: flex;
  justify-content: space-between;
- padding-left: 10%;
+
  gap: 6%;
  padding-top: 15%;
  padding-bottom: 15%;
