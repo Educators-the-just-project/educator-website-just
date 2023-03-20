@@ -260,6 +260,90 @@ button img{
     margin-top: 24px;
 }
 
+/* Admissions styling */
+
+.admissionInfo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px; 
+}
+
+.admissionInfo p{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    gap: 30px;
+}
+
+.stpetersInfo{
+    margin-top: 5% ;
+}
+
+.stpetersInfo h1{
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: -0.045em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.stpetersInfo p{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0.05em;
+text-align: left;
+}
+
+.admission_h1{
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: -0.045em;
+    text-align: left;
+    margin-top: 5%;
+}
+
+.procedureP{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    margin-top: 3%;
+}
+
+.admission_categories{
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+button{
+    height: 64px;
+    width: 270px;
+    border-radius: 15px;
+    padding: 14px 69px 14px 69px;
+    background: #46A724;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin: 10% auto 8% auto;
+}
+
 
 @media screen and (max-width: 1175px) {
     nav {
@@ -477,5 +561,98 @@ button img{
         width: 137.5px;        
         height: 3px;
       }
+
+      /* Admissions styling */
+
+    .admissionInfo{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%; 
+    }
+
+    .admissionInfo p {
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        gap: 30px;
+    }
+
+    .stpetersInfo{
+        margin-top: 5% ;
+    }
+
+    .stpetersInfo h1{
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+        letter-spacing: -0.045em;
+        text-align: left;        
+        margin-bottom: 20px;
+    }
+
+    .stpetersInfo p{
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.05em;
+        text-align: left;
+    }
+
+    .admission_h1{
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+        letter-spacing: -0.045em;
+        text-align: left;
+        margin-top: 5%;
+    }
+
+    .procedureP{
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        margin-top: 3%;
+    }
+
+    .admission_categories{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+        margin-top: 3%;
+    }
+
+    .admission_categories img{
+        width: 50%;        
+    }
+
+    button{
+        height: 28px;
+        width: 126px;
+        left: 132px;
+        top: 1648px;
+        border-radius: 15px;
+        padding: 5px 30px 5px 30px;
+        background: #46A724;
+        color: #FFFFFF;
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 36px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        margin: 10% auto 8% auto;
+    }
   }
 
