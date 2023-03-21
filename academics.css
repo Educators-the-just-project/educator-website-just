@@ -329,12 +329,13 @@ text-align: left;
     margin-top: 3%;
 }
 
-button{
+.admission_button{
     height: 64px;
     width: 270px;
     border-radius: 15px;
     padding: 14px 69px 14px 69px;
     background: #46A724;
+    color: white;
     font-family: Inter;
     font-size: 24px;
     font-weight: 500;
@@ -383,7 +384,7 @@ button{
       }
 
     
-    button{
+    .collapsable .academic button{
         display: flex;
         margin-bottom: 24px;
         font-size: 16px;
@@ -436,8 +437,7 @@ button{
         font-size: 12px;
         font-weight: 500;
         line-height: 17.94px;
-        letter-spacing: 0.05em;
-       
+        letter-spacing: 0.05em;       
     }
 
     .paragraph_image img{
