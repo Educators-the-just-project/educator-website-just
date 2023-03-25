@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   max-width: 1440px;
   width: 100%;
@@ -34,18 +35,21 @@ nav {
   letter-spacing: 0em;
   text-align: left;
 }
+
 .nagivation {
   width: 100%;
 
   display: flex;
   justify-content: space-between;
 }
+
 nav a {
   text-decoration: none;
   color: #8e98a8;
 
   transition: background-color, color;
 }
+
 nav a:hover {
   background-color: green;
   border-radius: 10px;
@@ -53,17 +57,65 @@ nav a:hover {
   color: white;
   cursor: pointer;
 }
+
 /* header logo */
 .head-pic {
   width: 20%;
   padding-left: 50px;
 }
+
 .head-pic img {
   width: 80%;
 }
+
 .hamburger {
   display: none;
 }
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
 
 /* first part */
 
@@ -79,28 +131,35 @@ nav a:hover {
 .right {
   width: 44%;
 }
+
 #mobile-pic {
   display: none;
 }
+
 .left {
   width: 65%;
 }
+
 .right img {
   width: 100%;
   border-radius: 10px;
 }
-.right img:hover {
-}
+
+.right img:hover {}
+
 .left h4 {
   /* display: none; */
 }
+
 .left h2 {
   color: green;
   font-size: 50px;
 }
+
 #down {
   margin-left: 100%;
 }
+
 .left p {
   font-family: Rubik;
   font-size: 34px;
@@ -118,6 +177,7 @@ nav a:hover {
 
   width: 100%;
 }
+
 .ending-btn-web {
   text-align: center;
   padding: 5%;
@@ -135,19 +195,23 @@ nav a:hover {
   color: white;
   border: 2px solid #46a724;
 }
+
 .left h3 {
   margin-left: 95%;
   padding-top: 1%;
 }
+
 .fa-solid,
 .fas {
   font-weight: 900;
   margin-left: 50%;
 }
+
 .btn {
   padding: 0px 0px;
   margin-bottom: 0%;
 }
+
 .btn button {
   background-color: #46a724;
   color: white;
@@ -159,12 +223,14 @@ nav a:hover {
   border: 2px solid #46a724;
   transition: backgroundcolor, color;
 }
+
 .btn button:hover {
   background-color: white;
   color: green;
   border: 2px solid yellowgreen;
   cursor: grab;
 }
+
 /* approval part */
 .appv {
   font-family: Inter;
@@ -174,6 +240,7 @@ nav a:hover {
   text-align: center;
   margin-top: 10%;
 }
+
 .approval {
   width: 100%;
   background-color: #edeff9;
@@ -188,6 +255,7 @@ nav a:hover {
   justify-content: center;
   height: 100%;
 }
+
 .edu img {
   width: 100px;
 }
@@ -202,6 +270,7 @@ nav a:hover {
 
   padding: 9% 0% 7% 5%;
 }
+
 .program h1 {
   font-family: Inter;
   font-size: 48px;
@@ -211,22 +280,27 @@ nav a:hover {
   text-align: center;
   padding-bottom: 3%;
 }
+
 .prog-images {
   display: flex;
   /* padding: 50px 30px; */
   width: 100%;
 }
+
 .imagess {
   width: 100%;
 }
+
 .imagess img {
   width: 85%;
   border-radius: 10px;
 }
+
 .imagess a {
   color: #46a724;
   font-size: 16px;
 }
+
 .imagess p {
   font-family: Inter;
   font-size: 28px;
@@ -237,8 +311,8 @@ nav a:hover {
 }
 
 /* scolarship parth */
-.Scolarship {
-}
+.Scolarship {}
+
 .Scolarship h1 {
   font-family: Inter;
   font-size: 48px;
@@ -248,6 +322,7 @@ nav a:hover {
   text-align: center;
   padding-bottom: 2%;
 }
+
 .position-3 {
   display: flex;
   justify-content: space-between;
@@ -265,6 +340,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
 }
+
 .first-position {
   border-radius: 1px;
   width: 29%;
@@ -275,6 +351,7 @@ nav a:hover {
   gap: 10px;
   background: #edeff9;
 }
+
 .third-position {
   border-radius: 1px;
   width: 29%;
@@ -283,11 +360,13 @@ nav a:hover {
   display: flex;
   flex-direction: column;
 }
+
 .second-position-images {
   width: 20%;
   margin-left: 40%;
   margin-top: 8%;
 }
+
 .second-position-images img {
   /* padding: 30px 10%; */
   width: 100%;
@@ -295,11 +374,13 @@ nav a:hover {
   align-items: center;
   align-self: center;
 }
+
 .first-position-images {
   width: 20%;
   margin-left: 40%;
   margin-top: 8%;
 }
+
 .first-position-images img {
   /* padding: 30px 10%; */
   width: 100%;
@@ -307,11 +388,13 @@ nav a:hover {
   align-items: center;
   align-self: center;
 }
+
 .third-position-images {
   width: 20%;
   margin-left: 40%;
   margin-top: 8%;
 }
+
 .third-position-images img {
   /* padding: 30px 10%; */
   width: 100%;
@@ -319,6 +402,7 @@ nav a:hover {
   align-items: center;
   align-self: center;
 }
+
 .second-position h3 {
   font-family: Inter;
   font-size: 20px;
@@ -328,6 +412,7 @@ nav a:hover {
   text-align: left;
   padding: 20px 10px 10px 20%;
 }
+
 .second-position p {
   font-family: Inter;
   font-size: 20px;
@@ -347,6 +432,7 @@ nav a:hover {
   text-align: center;
   padding: 10px;
 }
+
 .first-position p {
   font-family: Inter;
   font-size: 20px;
@@ -356,6 +442,7 @@ nav a:hover {
   text-align: left;
   padding: 0px 0px 10% 20%;
 }
+
 .third-position h3 {
   font-family: Inter;
   font-size: 20px;
@@ -365,6 +452,7 @@ nav a:hover {
   text-align: center;
   padding: 10px;
 }
+
 .third-position p {
   font-family: Inter;
   font-size: 20px;
@@ -374,6 +462,7 @@ nav a:hover {
   text-align: left;
   padding: 3% 0px 10% 20%;
 }
+
 /* news & quicklinks */
 .news-quicklink {
   /* display: flex; */
@@ -386,6 +475,7 @@ nav a:hover {
   align-items: center;
   /* margin-left: 10%; */
 }
+
 .lefffty-images img {
   width: 40%;
   border-radius: 10px;
@@ -434,6 +524,7 @@ nav a:hover {
   line-height: 41px;
   letter-spacing: 0em;
 }
+
 .testimonies p {
   font-family: Inter;
   font-size: 24px;
@@ -445,6 +536,7 @@ nav a:hover {
   width: 70%;
   padding-left: 25%;
 }
+
 .test-2 h5 {
   font-family: Inter;
   font-size: 20px;
@@ -454,6 +546,7 @@ nav a:hover {
   letter-spacing: 0em;
   text-align: center;
 }
+
 .testimonies h6 {
   font-family: Inter;
   font-size: 22px;
@@ -463,6 +556,7 @@ nav a:hover {
   letter-spacing: 0em;
   text-align: center;
 }
+
 #principal {
   font-family: Inter;
   font-size: 16px;
@@ -471,6 +565,7 @@ nav a:hover {
   letter-spacing: 0em;
   padding: 23%;
 }
+
 .test-2 {
   width: 100%;
   border-radius: 10px solid gray;
@@ -488,6 +583,7 @@ nav a:hover {
   border: 3px solid black;
   border-radius: 40px;
 }
+
 /* footer section */
 
 footer {
@@ -497,6 +593,7 @@ footer {
   /* padding-top: 50px;
   padding-bottom: 50px; */
 }
+
 .foot-left {
   padding-left: 5%;
   /* padding-top: 4%; */
@@ -508,15 +605,18 @@ footer {
   padding-left: 20px;
   padding-bottom: 0px;
 }
+
 .foot-images img {
   width: 100%;
 }
+
 .foot-section-3 {
   display: flex;
   width: 65%;
   padding-top: 6%;
   justify-content: space-between;
 }
+
 .foot-left p {
   font-family: Inter;
   font-size: 20px;
@@ -528,12 +628,14 @@ footer {
   padding-left: 20%;
   color: #83ab23;
 }
+
 .righttty {
   width: 40%;
   display: flex;
   flex-direction: column;
   line-height: 50px;
 }
+
 .righttty h1 {
   font-family: Manrope;
   font-size: 36px;
@@ -554,17 +656,21 @@ footer {
 
   color: black;
 }
+
 .list-item ul {
   list-style-type: none;
 }
+
 .list-item a {
   color: black;
 }
+
 .faaa {
   padding-left: 20%;
   font-size: 3rem;
   letter-spacing: 20px;
 }
+
 .fa {
   padding: 10%;
 
@@ -590,6 +696,7 @@ footer {
 .fa-instagram {
   color: #46a724;
 }
+
 .foot-middle h1 {
   font-family: Manrope;
   font-size: 36px;
@@ -598,6 +705,7 @@ footer {
   letter-spacing: 0em;
   text-align: left;
 }
+
 .foot-middle li {
   font-family: "Manrope", sans-serif;
   font-size: 24px;
@@ -607,14 +715,17 @@ footer {
   text-align: left;
   text-decoration: none;
 }
+
 .foot-middle ul {
   list-style-type: none;
   text-decoration: none;
 }
+
 .foot-middle a {
   text-decoration: none;
   color: black;
 }
+
 /*  */
 .foot-right h1 {
   font-family: Manrope;
@@ -624,6 +735,7 @@ footer {
   letter-spacing: 0em;
   text-align: left;
 }
+
 .foot-right li {
   font-family: "Manrope", sans-serif;
   font-size: 24px;
@@ -634,31 +746,37 @@ footer {
   text-decoration: none;
   color: black;
 }
+
 .foot-right ul {
   list-style-type: none;
   text-decoration: none;
   color: black;
 }
+
 .foot-right a {
   text-decoration: none;
   color: black;
 }
+
 hr.new1 {
   border-top: 5px solid black;
   width: 98%;
   margin-left: 10px;
 }
+
 .down-right {
   display: flex;
   justify-content: space-between;
   width: 30%;
 }
+
 .down-left {
   display: flex;
   justify-content: flex-end;
   width: 98%;
   gap: 15px;
 }
+
 .down-down-down {
   width: 100%;
   background: #e9ebf8;
@@ -667,6 +785,7 @@ hr.new1 {
   padding-top: 20px; */
   padding: 20px 20px 20px 20px;
 }
+
 .down-down-down h6 {
   font-family: Manrope;
   font-size: 16px;
@@ -683,12 +802,15 @@ hr.new1 {
   justify-content: space-around;
   padding: 10%;
 }
+
 .contact-section-images {
   width: 55%;
 }
+
 .contact-section-right {
   width: 45%;
 }
+
 .contact-section-images img {
   width: 80%;
 }
@@ -701,6 +823,7 @@ hr.new1 {
   letter-spacing: 0em;
   text-align: left;
 }
+
 .contact-section-right p {
   font-family: Inter;
   font-size: 20px;
@@ -711,6 +834,7 @@ hr.new1 {
   width: 60%;
   padding: 10% 00%;
 }
+
 .contact-section-right h6 {
   font-family: Inter;
   font-size: 24px;
@@ -719,15 +843,18 @@ hr.new1 {
   letter-spacing: 0em;
   text-align: left;
 }
+
 #contact-faa {
   color: #46a724;
   font-size: 30px;
 }
+
 .foot-imagesss {
   display: flex;
   width: 80%;
   padding-left: 20px;
 }
+
 /* #barcode {
   padding-top: 16%;
   width: 40%;
@@ -745,6 +872,7 @@ hr.new1 {
   padding-top: 5%;
   padding-bottom: 9%;
 }
+
 .single-banner {
   width: 100%;
   background-image: url(https://s3-alpha-sig.figma.com/img/b39b/b753/f104a36e7ce2a5aab13303f9c3a54818?Expires=1679875200&Signature=NJ18kZPZXpfNeIXi7lcDbyIIpSrmBbwSgs4rliVT8RgvR1b2eChCPD7TJWiseDMAmuSPMvMGADeZaC50-GgRwoQGoeuu5S59C6WkjqtKY8viyXBkrkWi7Chp7xfJ-C5OSPjKjKaPduJUoJ6hnkfQuH6pSvIIWKAqrrrAwwByJp8vzyUzUtBmxwXDCDJWQFgxPs3lF2fQKifjzq1NXMh5LKcsmJYfU0AuAC3UKjfWwFeFq-qP6HbwayAPth7EEYSrPKslqYHEAJ8NmOk4lMsezknu-jkJxjRECKPbI4yDllbICQTZJqj7HdQ8Qy7PslUxNIGzFmNFnVfeiXnA1Wn4eg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
@@ -752,6 +880,7 @@ hr.new1 {
   background-position: center;
   background-size: cover;
 }
+
 .single-banner img {
   width: 100%;
   height: 430px;
@@ -774,6 +903,7 @@ hr.new1 {
   padding-top: 5%;
   padding-bottom: 5%;
 }
+
 .about-our-vision p {
   font-family: Manrope;
   font-size: 20px;
@@ -785,11 +915,13 @@ hr.new1 {
   padding-left: 10%;
   /* padding-bottom: 20%; */
 }
+
 .about-our-mission {
   width: 33%;
   border: 2px solid #46a724;
   border-radius: 10px;
 }
+
 .about-our-mission h1 {
   font-family: Inter;
   font-size: 34px;
@@ -800,6 +932,7 @@ hr.new1 {
   padding-top: 5%;
   padding-bottom: 5%;
 }
+
 .about-our-mission p {
   font-family: Manrope;
   font-size: 20px;
@@ -829,6 +962,7 @@ hr.new1 {
   padding-top: 5%;
   padding-bottom: 5%;
 }
+
 .about-more-info p {
   font-family: Manrope;
   font-size: 20px;
@@ -839,6 +973,18 @@ hr.new1 {
   width: 85%;
   padding-left: 15%;
   padding-bottom: 30%;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
 @media screen and (max-width: 1175px) {
@@ -852,47 +998,110 @@ hr.new1 {
     padding: 0;
     margin: 0;
   }
+
   body {
     width: 100%;
     max-width: 100%;
   }
+
   nav {
     display: none;
   }
+
   .nagivation {
     display: flex;
     justify-content: space-between;
   }
+
   .head-pic {
     width: 90%;
     padding-left: 20px;
   }
+
   .head-pic img {
     width: 50%;
   }
+
   .hamburger {
     width: 20%;
     display: flex;
     margin-top: 12%;
+    margin-right: 5%;
+  }
+
+  /* @Neaka adding styling for hamburger nav menu*/
+  /* The Overlay (background) */
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 3;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  
+
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
   }
 
   #web-pic {
     display: none;
   }
+
   #mobile-pic {
     display: flex;
     width: 100%;
     /* padding-left: 10%; */
     filter: brightness(60%);
   }
+
   #mobile-pic img {
     width: 100%;
   }
+
   .right {
     width: 100%;
     padding-left: 1%;
     margin-left: 4%;
   }
+
   .right img {
     width: 100%;
   }
@@ -905,6 +1114,7 @@ hr.new1 {
     position: relative;
     line-height: 15px;
   }
+
   .left {
     width: 100%;
     position: absolute;
@@ -912,6 +1122,7 @@ hr.new1 {
     left: 8%;
     z-index: 2;
   }
+
   .left p {
     font-family: Rubik;
     font-size: 14px;
@@ -925,16 +1136,20 @@ hr.new1 {
   #apostl {
     display: none;
   }
+
   #postle {
     display: none;
   }
+
   .left h1 img {
     font-size: 10px;
   }
+
   .left h3 {
     margin-left: 85%;
     padding-top: 1%;
   }
+
   #apos img {
     color: white;
     font-size: 1px;
@@ -944,6 +1159,7 @@ hr.new1 {
     padding: 0px 0px;
     margin-bottom: 0%;
   }
+
   .btn button {
     background-color: #46a724;
     color: white;
@@ -957,9 +1173,11 @@ hr.new1 {
     font-size: 18px;
     font-weight: 600;
   }
+
   .appv {
     margin-top: 5%;
   }
+
   .appv h1 {
     font-family: Inter;
     font-size: 20px;
@@ -970,12 +1188,15 @@ hr.new1 {
 
     padding-bottom: 3%;
   }
+
   .approval {
     width: 105%;
   }
+
   .program {
     padding: 9%;
   }
+
   .program h1 {
     font-family: Inter;
     font-size: 20px;
@@ -984,6 +1205,7 @@ hr.new1 {
     letter-spacing: 0em;
     text-align: left;
   }
+
   .prog-images {
     width: 100%;
 
@@ -1000,18 +1222,22 @@ hr.new1 {
     grid-auto-flow: dense;
     height: fit-content; */
   }
-  .prog-images > div {
+
+  .prog-images>div {
     width: 60%;
     display: inline-block;
     vertical-align: middle;
     padding: 8px;
   }
+
   .imagess {
     width: 100%;
   }
+
   .imagess img {
     width: 100%;
   }
+
   #creaa {
     /* grid-auto-flow: dense;
     grid-column-end: span 3;
@@ -1019,6 +1245,7 @@ hr.new1 {
     width: 100%;
     /* border-radius: 4.910179615020752px; */
   }
+
   #prim {
     /* width: 53%;
     height: 172.83831787109375px;
@@ -1028,6 +1255,7 @@ hr.new1 {
     border-radius: 4.910179615020752px; */
     width: 100%;
   }
+
   #sece {
     /* height: 172.83831787109375px;
    width: 100%;
@@ -1036,6 +1264,7 @@ hr.new1 {
     border-radius: 4.910179615020752px; */
     width: 100%;
   }
+
   #sece img {
     width: 100%;
     border-radius: 10px;
@@ -1050,6 +1279,7 @@ hr.new1 {
     letter-spacing: 0em;
     text-align: left;
   }
+
   .imagess p {
     font-family: Inter;
     font-size: 16px;
@@ -1074,6 +1304,7 @@ hr.new1 {
     padding: 10px;
     gap: 12px;
   }
+
   .position-3 {
     width: 100%;
     padding: unset !important;
@@ -1082,31 +1313,37 @@ hr.new1 {
     overflow-x: auto;
   }
 
-  .position-3 > div {
+  .position-3>div {
     width: 60%;
     display: inline-block;
     vertical-align: top;
     padding: 8px;
     height: 190px;
   }
+
   .second-position-images {
     width: 50%;
     margin: 5% 10% 0% 40%;
   }
+
   .second-position img {
     width: 40%;
   }
+
   .first-position-images {
     width: 50%;
     margin: 5% 10% 0% 40%;
   }
+
   .first-position img {
     width: 40%;
   }
+
   .third-position-images {
     width: 50%;
     margin: 5% 10% 0% 40%;
   }
+
   .third-position img {
     width: 40%;
   }
@@ -1139,6 +1376,7 @@ hr.new1 {
     text-align: center;
     padding-top: 10%;
   }
+
   .third-position p {
     font-family: Inter;
     font-size: 10px;
@@ -1159,6 +1397,7 @@ hr.new1 {
     margin-top: 4%;
     padding-left: 0px;
   }
+
   .second-position p {
     font-family: Inter;
     font-size: 10px;
@@ -1181,6 +1420,7 @@ hr.new1 {
     width: 90%;
     text-align: center;
   }
+
   .lefffty-images img {
     width: 80%;
     border-radius: 10px;
@@ -1225,6 +1465,7 @@ hr.new1 {
     letter-spacing: 0em;
     padding: 10%;
   }
+
   .testimonies p {
     font-family: Inter;
     font-size: 12px;
@@ -1236,6 +1477,7 @@ hr.new1 {
     width: 91%;
     padding-left: 5%;
   }
+
   .test-2 h5 {
     font-family: Inter;
     font-size: 14px;
@@ -1244,6 +1486,7 @@ hr.new1 {
     letter-spacing: 0em;
     padding-left: 37%;
   }
+
   .testimonies h6 {
     font-family: Inter;
     font-size: 18px;
@@ -1252,6 +1495,7 @@ hr.new1 {
     letter-spacing: 0em;
     text-align: center;
   }
+
   #principal {
     font-family: Inter;
     font-size: 16px;
@@ -1260,10 +1504,12 @@ hr.new1 {
     letter-spacing: 0em;
     padding-left: 53%;
   }
+
   .test-2 {
     width: 100%;
     border-radius: 10px solid black;
   }
+
   .fa-solid,
   .fas {
     font-weight: 900;
@@ -1271,6 +1517,7 @@ hr.new1 {
     align-items: center;
     margin-left: 50%;
   }
+
   .ending-btn-web {
     text-align: center;
     padding: 9%;
@@ -1290,6 +1537,7 @@ hr.new1 {
     color: white;
     border: 2px solid #46a724;
   }
+
   .test-2 h2 {
     color: #46a724;
     text-align: center;
@@ -1302,22 +1550,27 @@ hr.new1 {
     background: #e9ebf8;
     width: 100%;
   }
+
   .foot-left {
     width: 30%;
-      padding-top: 3%;
+    padding-top: 3%;
   }
+
   .foot-images {
     width: 100%;
   }
+
   .foot-images img {
     width: 100%;
   }
+
   .foot-section-3 {
     width: 65%;
     display: flex;
     justify-content: space-between;
     padding-top: 6%;
   }
+
   .foot-middle h1 {
     font-family: Manrope;
     font-size: 10px;
@@ -1326,6 +1579,7 @@ hr.new1 {
     letter-spacing: 0em;
     text-align: left;
   }
+
   .foot-middle li {
     font-family: Manrope;
     font-size: 7px;
@@ -1334,6 +1588,7 @@ hr.new1 {
     letter-spacing: 0em;
     text-align: left;
   }
+
   .foot-right h1 {
     font-family: Manrope;
     font-size: 10px;
@@ -1342,6 +1597,7 @@ hr.new1 {
     letter-spacing: 0em;
     text-align: left;
   }
+
   .foot-right li {
     font-family: Manrope;
     font-size: 7px;
@@ -1350,6 +1606,7 @@ hr.new1 {
     letter-spacing: 0em;
     text-align: left;
   }
+
   .righttty h1 {
     font-family: Manrope;
     font-size: 10px;
@@ -1358,6 +1615,7 @@ hr.new1 {
     letter-spacing: 0em;
     text-align: left;
   }
+
   .righttty li {
     font-family: Manrope;
     font-size: 7px;
@@ -1366,11 +1624,13 @@ hr.new1 {
     letter-spacing: 0em;
     text-align: left;
   }
+
   .faaa {
     padding-left: 10px;
     font-size: 1rem;
     display: flex;
   }
+
   .fa {
     padding: 20px;
 
@@ -1380,6 +1640,7 @@ hr.new1 {
 
     font-size: 10px;
   }
+
   .foot-left p {
     font-family: Inter;
     font-size: 4px;
@@ -1389,9 +1650,11 @@ hr.new1 {
     letter-spacing: 0em;
     text-align: left;
   }
-    .list-item ul {
+
+  .list-item ul {
     list-style-type: none;
   }
+
   .list-item a {
     color: black;
   }
@@ -1411,33 +1674,40 @@ hr.new1 {
   .fa-instagram {
     color: #46a724;
   }
-  .foot-middle {
-  }
-   .foot-middle a {
+
+  .foot-middle {}
+
+  .foot-middle a {
     text-decoration: none;
   }
+
   .foot-right ul {
     list-style-type: none;
     text-decoration: none;
   }
+
   .foot-right a {
     text-decoration: none;
   }
+
   hr.new1 {
     border-top: 5px solid black;
     width: 98%;
     margin-left: 10px;
   }
+
   .down-right {
     display: flex;
     justify-content: space-between;
     width: 30%;
   }
+
   .down-left {
     display: flex;
     justify-content: flex-end;
     width: 98%;
   }
+
   .down-down-down {
     width: 100%;
     background: #e9ebf8;
@@ -1446,6 +1716,7 @@ hr.new1 {
   padding-top: 20px; */
     padding: 20px 20px 20px 20px;
   }
+
   .down-down-down h6 {
     font-family: Manrope;
     font-size: 4px;
